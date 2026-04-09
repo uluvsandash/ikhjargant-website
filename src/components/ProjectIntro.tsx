@@ -8,7 +8,7 @@ export default function ProjectIntro() {
         <img
           src="/images/building.jpg.png"
           alt="Төслийн 3D зураг"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-left lg:object-center"
         />
       </div>
 
