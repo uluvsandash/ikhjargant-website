@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npm run:*)",
       "Bash(gh auth:*)",
-      "Bash(git --version)"
+      "Bash(git --version)",
+      "Bash(npm install:*)",
+      "Bash(cp \"floor-plan.jpg.png.png\" \"floor-plan.jpg.png\")",
+      "Bash(rm \"floor-plan.jpg.png.png\")"
     ]
   }
 }
