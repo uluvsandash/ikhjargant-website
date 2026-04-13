@@ -187,7 +187,7 @@ export default function LayoutModal({ layout, onClose }: LayoutModalProps) {
                           className="w-full accent-beige-500"
                         />
                         <div className="flex justify-between text-xs text-gray-400 mt-1">
-                          <span>20%</span>
+                          <span></span>
                           <span>100%</span>
                         </div>
                       </div>
