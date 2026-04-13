@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import ProjectIntro from './components/ProjectIntro';
 import RoomLayouts from './components/RoomLayouts';
@@ -17,6 +18,7 @@ export default function App() {
         <RoomLayouts />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
