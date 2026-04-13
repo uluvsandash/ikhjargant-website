@@ -139,7 +139,7 @@ export default function LayoutModal({ layout, onClose }: LayoutModalProps) {
                   <p className="text-gray-600">{layout.description}</p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-[2fr_3fr] gap-4">
                   <div>
                     <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Цонхны харууц</h4>
                     <ul className="space-y-2">
