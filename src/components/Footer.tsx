@@ -46,7 +46,7 @@ export default function Footer() {
                 </div>
                 <span className="font-medium">Гэрэл Апартмент Facebook</span>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-beige-800 hover:text-beige-600 transition-colors duration-300 group">
+              <a href="https://www.instagram.com/ikhjargantllc/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-beige-800 hover:text-beige-600 transition-colors duration-300 group">
                 <div className="w-10 h-10 rounded-full bg-beige-200 flex items-center justify-center group-hover:bg-beige-500 group-hover:text-white transition-all duration-300">
                   <Instagram size={20} />
                 </div>
