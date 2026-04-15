@@ -16,6 +16,7 @@ export default defineConfig(({mode}) => {
         lastmod: new Date(),
         changefreq: 'monthly',
         priority: 1.0,
+        generateRobotsTxt: false,
       }),
     ],
     define: {
