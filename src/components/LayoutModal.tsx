@@ -9,7 +9,7 @@ interface LayoutModalProps {
 }
 
 export default function LayoutModal({ layout, onClose }: LayoutModalProps) {
-  const [downPaymentPercent, setDownPaymentPercent] = useState(30);
+  const [downPaymentPercent, setDownPaymentPercent] = useState(20);
   const [imgScale, setImgScale] = useState(1);
   const [imgPos, setImgPos] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -55,11 +55,13 @@ export default function LayoutModal({ layout, onClose }: LayoutModalProps) {
 
   if (!layout) return null;
 
-  const LOAN_MONTHS = 36;
+  const LOAN_MONTHS = 240;
+  const MONTHLY_INTEREST_RATE = 0.014;
   const totalPrice = layout.size * layout.pricePerSq;
   const downPayment = totalPrice * (downPaymentPercent / 100);
   const loanAmount = totalPrice - downPayment;
-  const monthlyPayment = loanAmount / LOAN_MONTHS;
+  const growthFactor = Math.pow(1 + MONTHLY_INTEREST_RATE, LOAN_MONTHS);
+  const monthlyPayment = loanAmount * MONTHLY_INTEREST_RATE * growthFactor / (growthFactor - 1);
 
   return (
     <AnimatePresence>
